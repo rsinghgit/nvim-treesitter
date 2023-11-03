@@ -588,7 +588,7 @@ function M.update(options)
     else
       local parsers_to_update = outdated_parsers() or info.installed_parsers()
       if #parsers_to_update == 0 then
-        utils.notify "All parsers are up-to-date!"
+      -- utils.notify "All parsers are up-to-date!"
       end
       for _, lang in pairs(parsers_to_update) do
         install {
